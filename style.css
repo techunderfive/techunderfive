@@ -1,11 +1,21 @@
-header.full-banner {
-  padding: 0;
+body {
   margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header.banner {
   width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
 }
 
 .banner-logo {
   width: 100%;
   height: auto;
+  max-width: 1200px; /* prevents extreme stretching on large screens */
+  margin: 0 auto;
   display: block;
 }
