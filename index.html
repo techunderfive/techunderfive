@@ -2,57 +2,139 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Tech Under 5</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tech Under 5 – Simplifying Tech, One Concept at a Time</title>
+  <meta name="description" content="Quick, clear explanations of complex tech topics like blockchain, AI, and cybersecurity in under 5 minutes.">
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
       line-height: 1.6;
+      color: #222;
     }
     header {
-      background: #000;
-      color: #fff;
-      padding: 20px;
+      background-color: #f9fafb;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .post-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .post-card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      text-decoration: none;
+      color: inherit;
+      overflow: hidden;
+      background-color: #fff;
+      transition: box-shadow 0.3s;
+    }
+    .post-card:hover {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .post-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .post-card h3 {
+      padding: 10px;
+      font-size: 1.1rem;
+    }
+    .post-card p {
+      padding: 0 10px 10px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .support {
       text-align: center;
     }
-    main {
-      padding: 20px;
+    .support img {
+      height: 45px;
     }
     footer {
-      background: #f1f1f1;
+      background-color: #f4f4f4;
       text-align: center;
-      padding: 10px;
-      font-size: 0.8em;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #0077cc;
     }
   </style>
 </head>
 <body>
 
+  <!-- Banner -->
   <header>
+    <img src="logo.png" alt="Tech Under 5 Logo">
     <h1>Tech Under 5</h1>
-    <p>Simplifying tech — one concept at a time.</p>
+    <p>Simplifying tech — one concept at a time</p>
   </header>
 
-  <main>
-    <h2>Welcome</h2>
-    <p>This site shares simple, under-5-minute explanations of complex tech topics.</p>
+  <!-- About -->
+  <section>
+    <h2>What This Blog Is About</h2>
+    <p>After years in tech — including at FAANG companies — I realized that the biggest problem isn’t lack of information, but lack of clarity. My mission is to explain modern tech topics using real-world analogies — in under 5 minutes.</p>
+  </section>
 
-    <h3>Support this site</h3>
+  <!-- Blog Posts -->
+  <section>
+    <h2>Latest Articles</h2>
+    <div class="post-grid">
+      <a href="articles/blockchain-explained.html" class="post-card">
+        <img src="thumbnails/blockchain.jpg" alt="Understanding Blockchain">
+        <h3>Understanding Blockchain in Simple Terms</h3>
+        <p>How blockchain works — explained like a digital notebook.</p>
+      </a>
+      <a href="articles/cybersecurity-beginners.html" class="post-card">
+        <img src="thumbnails/cybersecurity.jpg" alt="Beginner's Guide to Cybersecurity">
+        <h3>A Beginner’s Guide to Cybersecurity</h3>
+        <p>Stay safe online with these key principles — made simple.</p>
+      </a>
+      <!-- Add more articles below -->
+    </div>
+  </section>
+
+  <!-- Monetization / Support -->
+  <section class="support">
+    <h2>Support This Blog</h2>
     <a href="https://www.buymeacoffee.com/YOURNAME" target="_blank">
-      <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px; width: 162px;">
+      <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee">
     </a>
+    <p>Or explore my <a href="https://gumroad.com/YOURNAME" target="_blank">digital downloads</a> and templates.</p>
+  </section>
 
-    <h3>Useful Resources</h3>
-    <ul>
-      <li><a href="https://amzn.to/YOUR-AFFILIATE-LINK" target="_blank">My favorite mic for videos</a></li>
-    </ul>
-  </main>
-
+  <!-- Contact -->
   <footer>
-    &copy; 2025 Tech Under 5. All Rights Reserved.
+    <p>Contact: <a href="mailto:you@example.com">you@example.com</a></p>
+    <p>&copy; 2025 Tech Under 5. All rights reserved.</p>
   </footer>
 
 </body>
 </html>
+
