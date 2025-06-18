@@ -9,3 +9,41 @@ title: Home
 
 <h1>Welcome to Tech Under 5</h1>
 <p>Having worked across multiple Tech companies including at FAANG, I’ve learned firsthand that it’s not knowledge, but clarity, that drives real understanding.Whether you’re curious about how something works or trying to level up your tech skills, I’m here to make things make sense — one concept at a time.</p>
+
+
+<!-- SEARCH BAR -->
+
+<div style="text-align: center; margin: 2rem 0;">
+  <input id="searchInput" type="text" placeholder="Search articles..." style="width: 60%; padding: 10px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc;">
+</div>
+
+<!-- BLOG GRID -->
+
+<div id="blogList" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 0 20px;">
+  {% for post in site.posts %}
+    <div class="blog-card" data-title="{{ post.title | downcase }}" style="width: 300px; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      {% if post.image %}
+        <img src="{{ post.image }}" alt="Thumbnail" style="width: 100%; height: 180px; object-fit: cover;">
+      {% endif %}
+      <div style="padding: 15px;">
+        <h3 style="margin-top: 0;"><a href="{{ post.url | relative_url }}" style="text-decoration: none; color: #007acc;">{{ post.title }}</a></h3>
+        <p style="font-size: 0.9rem; color: #555;">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        <a href="{{ post.url | relative_url }}" style="font-weight: bold; color: #007acc;">Read more →</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+<script>
+  const input = document.getElementById('searchInput');
+  const cards = document.querySelectorAll('.blog-card');
+
+  input.addEventListener('keyup', function () {
+    const query = input.value.toLowerCase();
+    cards.forEach(card => {
+      const title = card.getAttribute('data-title');
+      card.style.display = title.includes(query) ? 'block' : 'none';
+    });
+  });
+</script>
