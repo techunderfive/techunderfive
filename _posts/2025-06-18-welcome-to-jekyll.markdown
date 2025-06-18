@@ -3,7 +3,7 @@ layout: post
 title: "Welcome to Tech Under 5"
 date: 2025-06-18
 excerpt: "An introduction to what this blog is about, and what kind of content you’ll find here."
-image: /assets/images/welcome-banner.png
+image: /assets/images/logo.png
 ---
 
 👋 Hey there!
