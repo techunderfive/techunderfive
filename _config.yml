@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+# Welcome to TechUnder5
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
@@ -18,19 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Tech Under 5
+title: TechUnder5
 email: techunder5mins@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Having worked across multiple Tech companies including at FAANG, I’ve learned firsthand that it’s not knowledge, but clarity, that drives real understanding.Whether you’re curious about how something works or trying to level up your tech skills, I’m here to make things make sense — one concept at a time.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://techunderfive.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: 
+github_username: 
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
