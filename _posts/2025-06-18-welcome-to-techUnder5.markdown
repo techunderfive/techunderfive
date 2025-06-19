@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Welcome to Tech Under 5"
+title: "Welcome to TechUnder5"
 date: 2025-06-18
 excerpt: "An introduction to what this blog is about, and what kind of content you’ll find here."
 ---
@@ -14,7 +14,7 @@ Stay tuned for:
 - Cloud Solutions and best practices 🧱
 - Real-world explanations of Cloud, FinOps & Security 🔍
 
-Whether you're a beginner, looking to get certified or just trying to understand tech in simple works, **Tech Under 5** is for anyone who values clarity.
+Whether you're a beginner, looking to get certified or just trying to understand tech in simple works, **TechUnder5** is for anyone who values clarity.
 
 ---
 
