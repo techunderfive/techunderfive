@@ -6,8 +6,11 @@ body {
   background-color: #fafafa;
 }
 
-h1, h2 {
+h1 {
   color: #222;
+}
+h2 {
+  color: #333333;
 }
 
 a {
@@ -17,4 +20,9 @@ a {
 
 a:hover {
   color: #005fa3;
+}
+
+/* Set main content text to charcoal grey */
+p, li, span, div, section {
+  color: #333333;
 }
