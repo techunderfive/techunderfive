@@ -10,7 +10,7 @@ Welcome to **TechUnder5**, where tech meets simplicity—fast.
 In today’s post, we’re diving into one of the most revolutionary topics in modern finance: **DeFi**, short for **Decentralized Finance**.
 
 
-<div style="text-align: center; margin-bottom: 20px;">
+<div style="text-align: left; margin-bottom: 20px;">
   <iframe width="560" height="315" 
           src="https://www.youtube.com/embed/yaUJgAlJSWo"
           title="How DeFi Works vs Traditional Banking" 
@@ -152,7 +152,7 @@ No more waiting. No more gatekeepers.</p>
 <div style="text-align: left; margin-bottom: 10px;">
   <img src="/assets/images/tug-of-war-defi-vs-banks.png" 
        alt="Tug of War between DeFi and Traditional Banks" 
-       style="max-width: 400px; height: auto; border-radius: 6px;">
+       style="max-width: 350px; height: auto; border-radius: 6px;">
 </div>
 
 ## DeFi vs Banks — A Tug of War
@@ -207,7 +207,7 @@ To help clarify the capabilities discussed in this article, here’s a quick ref
 
 ### Traditional Banking Capabilities
 
-<table style="width:75%; border-collapse: collapse; margin-top: 1rem;">
+<table style="width:70%; border-collapse: collapse; margin-top: 1rem;">
   <thead>
     <tr>
       <th style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0;">Capability</th>
@@ -248,7 +248,7 @@ To help clarify the capabilities discussed in this article, here’s a quick ref
 
 ### DeFi Capabilities
 
-<table style="width:75%; border-collapse: collapse; margin-top: 2rem;">
+<table style="width:70%; border-collapse: collapse; margin-top: 2rem;">
   <thead>
     <tr>
       <th style="border: 1px solid #ddd; padding: 10px; background-color: #f0f0f0;">Capability</th>
