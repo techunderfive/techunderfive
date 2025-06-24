@@ -74,6 +74,13 @@ Imagine Alice wants to **earn interest** on her savings. Here’s what happens a
 - The system is **centralized and slow**.
 - Alice earns only a **fraction** of what her money helps the bank make.
 
+### The Perks:
+- **Deposit protection** — most banks insure your savings up to $250K.
+- **Dispute support** — you can reverse fraudulent charges or recover lost funds.
+- **Human help** — talk to someone, file a complaint, walk into a branch.
+- **Government integration** — tax reporting, salary deposits, and benefits are automatic.
+- **Physical access** — get cash anytime via ATMs.
+
 ---
 
 ## How DeFi Works
@@ -87,6 +94,13 @@ Now let’s see the **same process** in the **DeFi world**:
 5. The borrower repays with **interest**.
 6. The **smart contract** splits the interest and sends Alice her share.
 7. There’s **no middleman**—everything runs on code.
+
+### The Catch:
+- **No safety nets** — if a smart contract fails, there’s no insurance or recovery.
+- **Irreversible transactions** — once sent, funds are often gone for good.
+- **No human support** — no helpline, no dispute resolution.
+- **Requires technical know-how** — mistakes in wallet handling or gas fees can cost money.
+- **Scams and bugs happen** — open-source doesn’t always mean secure.
 
 ### The Perks:
 - **No approvals**, no paperwork.
