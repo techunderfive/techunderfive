@@ -121,10 +121,6 @@ Think of measurement as choosing an outcome from a sea of probabilities—guided
 These are all **classical protocols**, operating with binary data (0s and 1s) over wired or wireless channels.
 
 ---
-
-## Quantum Communication Protocols Use:
-Quantum protocols rely on the **unique behaviors of quantum particles**, often paired with classical communication channels.
-
 <h2>Quantum Protocols (Compared)</h2>
 
 <p>Quantum protocols rely on the unique behaviors of quantum particles, often paired with classical communication channels.</p>
