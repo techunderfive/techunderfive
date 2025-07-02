@@ -7,6 +7,7 @@ image: /assets/images/blockchain_thumbnail.png
 author: TechUnder5
 date: 2025-06-24
 categories: [Blockchain]
+category: Blockchain
 ---
 > **TechUnder5** — where tech meets simplicity - fast. Today, we're simplifying one of the most buzzworthy topics in digital finance: **Blockchain** and how does it compare to **Money** we use.
 

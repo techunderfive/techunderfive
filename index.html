@@ -18,10 +18,9 @@ title: Home
 "><center>Your Guide to Clear Tech </center></h1>
 <p style="
   font-family: 'Poppins', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color:#333333;
 ">Having worked across multiple Tech companies including at FAANG, I’ve learned firsthand that it’s not knowledge, but clarity, that drives real understanding.Whether you’re curious about how something works or trying to level up your tech skills, I’m here to make things make sense — one concept at a time.</p>
-
 
 <!-- SEARCH BAR -->
 
@@ -29,14 +28,31 @@ title: Home
   <input id="searchInput" type="text" placeholder="Search articles..." style="width: 60%; padding: 10px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc;">
 </div>
 
+<ul id="results-container" style="width: 60%; margin: 0 auto; padding: 1rem; list-style: none;"></ul>
+
+<!-- Add script AFTER page is fully loaded -->
+<script src="https://unpkg.com/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('searchInput'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/search.json',
+      searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+      noResultsText: 'No results found',
+      fuzzy: false
+    });
+  });
+</script>
+
+ 
+<!--Filter by category
 <div class="category-links"style="text-align: center; margin: 2rem 0;">
   <strong>Filter by Topic:</strong>
   <a href="/category/blockchain/">Blockchain</a> |
   <a href="/category/cloud/">Cloud</a> |
   <a href="/category/quantumComputing/">Quantum Computing</a>
 </div>
-
-<!-- BLOG GRID -->
 
 <div id="blogList" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 0 20px;">
   {% for post in site.posts %}
@@ -51,7 +67,162 @@ title: Home
       </div>
     </div>
   {% endfor %}
+</div>-->
+
+<!--New Blog Grid-->
+
+<style>
+  .blog-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .category-sidebar {
+    flex: 0 0 180px;
+    border-right: 2px solid #ddd;
+    padding-right: 1rem;
+  }
+
+  .category-sidebar ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .category-sidebar li {
+    margin-bottom: 1rem;
+  }
+
+  .category-sidebar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .category-content {
+    flex: 1;
+    overflow-x: hidden;
+  }
+
+  .category-block {
+    margin-bottom: 3rem;
+  }
+
+  .category-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 0.5rem;
+  }
+
+  .post-card {
+    max-width: 280px;
+    flex-shrink: 0;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .post-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .post-card h4 {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+
+  .post-card p {
+    font-size: 0.9rem;
+    color: #444;
+  }
+
+  .see-more {
+    display: inline-block;
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .blog-wrapper {
+      flex-direction: column;
+    }
+
+    .category-sidebar {
+      border-right: none;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 1rem;
+    }
+  }
+</style>
+
+<!-- MAIN BLOG WRAPPER -->
+<div class="blog-wrapper">
+
+  <!-- LEFT SIDEBAR: CATEGORY LIST -->
+  <div class="category-sidebar">
+    <ul>
+      {% assign all_categories = site.posts | map: 'category' | sort % | uniq %}
+      {% assign categories = "" | split: "" %}
+      {% if all_categories contains "about" %}
+        {% assign categories = categories | push: "about" %}
+      {% endif %}
+
+      {% for cat in all_categories %}
+        {% unless cat == "about" %}
+          {% assign categories = categories | push: cat %}
+        {% endunless %}
+      {% endfor %}
+
+      {% for category in categories %}
+        <li><a href="#{{ category | slugify }}">{{ category | capitalize }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- RIGHT: CATEGORY CONTENTS -->
+  <div class="category-content">
+    {% for category in categories %}
+      {% assign posts_in_category = site.posts | where: "category", category %}
+      {% if posts_in_category.size > 0 %}
+        <div class="category-block" id="{{ category | slugify }}">
+          <div class="category-title">{{ category | capitalize }}</div>
+          <div class="post-carousel">
+            {% for post in posts_in_category limit:4 %}
+              <div class="post-card">
+                <a href="{{ post.url }}">
+                  <img src="{{ post.image }}" alt="{{ post.title }}">
+                  <h4>{{ post.title }}</h4>
+                </a>
+                <p>{{ post.excerpt | default: post.content | strip_html | truncate: 120 }}</p>
+              </div>
+            {% endfor %}
+          </div>
+          {% if posts_in_category.size > 4 %}
+            <a class="see-more" href="/category/{{ category | slugify }}/">See More →</a>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
 </div>
+
+
+
+
 
 
 <script>

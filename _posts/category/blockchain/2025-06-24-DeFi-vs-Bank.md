@@ -4,7 +4,8 @@ image: /assets/images/defi-thumbnail.jpg
 title: "How DeFi Works vs Traditional Banking — Explained Simply (Under 5 Minutes)"
 description: "Compare how decentralized finance (DeFi) works vs traditional banks using real-world analogies, flowcharts, and smart contracts. Learn the basics under 5 minutes."
 tags: [DeFi, blockchain, traditional banking, smart contracts, TechUnder5]
-categories: [Blockchain]
+categories: Blockchain
+category: Blockchain
 ---
 
 Welcome to **TechUnder5**, where tech meets simplicity—fast.  
