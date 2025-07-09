@@ -5,9 +5,8 @@ tags: [Quantum Computing, Entanglement, Superposition, Qubits, Future Technology
 layout: post
 author: TechUnder5
 image: /assets/images/quantum-thumbnail.png
-categories: [Quantum Computing]
 category: Quantum Computing
-excerpt: Learn what quantum computing is, how it works, key concepts like entanglement and superposition, and what it could mean for the future.
+excerpt: "Learn what quantum computing is, how it works, key concepts like entanglement and superposition, and what it could mean for the future."
 ---
 
 # What is Quantum Computing?

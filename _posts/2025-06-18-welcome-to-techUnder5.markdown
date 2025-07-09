@@ -3,6 +3,7 @@ layout: post
 title: "Welcome to TechUnder5"
 date: 2025-06-18
 excerpt: "An introduction to what this blog is about, and what kind of content you’ll find here."
+description: "An introduction to what this blog is about, and what kind of content you’ll find here."
 category: About
 image: assets/images/about.png
 ---
@@ -20,9 +21,10 @@ image: assets/images/about.png
 Thanks for stopping by.In this blog, I’ll simplify tech through real-world analogies — making concepts easy to grasp in just 5 minutes.
 
 Stay tuned for:
-- AI tools & hacks 💡
-- Cloud Solutions and best practices 🧱
-- Real-world explanations of Cloud, FinOps & Security 🔍
+- Blockchain and it's use-cases
+- AI tools & hacks 
+- Cloud Solutions and best practices 
+- Real-world explanations of Cloud, FinOps & Security 
 
 Whether you're a beginner, looking to get certified or just trying to understand tech in simple works, **TechUnder5** is for anyone who values clarity.
 

@@ -3,12 +3,11 @@ title: "Microsoft Entra ID vs Active Directory: What’s the Difference?"
 author: "TechUnder5"
 layout: post
 date: 2025-06-26
-categories: [Cloud]
 category: Cloud
 tags: [Entra ID, Azure AD, Active Directory, Cloud Identity, Microsoft Identity, Azure, IAM, Identity Management, SaaS Security, Modern Authentication]
 description: "Confused about Microsoft Entra ID and how it differs from Active Directory or Azure AD? This blog explains what they are, why Azure AD was rebranded, and how they compare — with analogies and a clear comparison chart."
 image: /assets/images/entra-vs-ad-banner.png
-excerpt: Confused about Microsoft Entra ID and how it differs from Active Directory or Azure AD? This blog explains what they are, why Azure AD was rebranded, and how they compare — with analogies and a clear comparison chart.
+excerpt: "Discover how Microsoft Entra ID differs from Active Directory and Azure AD, why Azure AD was rebranded, and see side-by-side analogy-driven comparisons and a clear chart to simplify identity management."
 ---
 
 <div style="text-align: left; margin-bottom: 10px;">

@@ -1,16 +1,16 @@
 ---
-title: "Why NFTs Lost Their Value | NFT Crash Explained in Under 5 Mins"
+title: "Why NFTs Lost Their Value | NFT Crash Explained  Simply in Under 5 Mins"
 description: "Discover what NFTs are, why they exploded in popularity, and the key reasons they eventually lost value — all in under 5 minutes with TechUnder5."
 tags: [nft, blockchain, ethereum, solana, digital art, techUnder5, market crash, collectibles]
 layout: post
 image: /assets/images/nft_value_thumbnail.jpg
 author: TechUnder5
 date: 2025-07-01
-categories: [Blockchain]
 category: Blockchain
+excerpt: "Unpack what NFTs (Non-Fungible Tokens) really are—unique blockchain-based digital assets—and why they crashed, from hype-driven speculation and market volatility to bubble dynamics, tracing the rise and fall of digital ownership in under 5 minutes."
 ---
 
-> **TechUnder5** — where tech meets simplicity, fast. Today, we’re diving into one of the hottest—and most controversial—topics in digital collectibles: **NFTs** and **why they lost their value**.
+**TechUnder5** — where tech meets simplicity, fast. Today, we’re diving into one of the hottest—and most controversial—topics in digital collectibles: **NFTs** and **why they lost their value**.
 
 ---
 
