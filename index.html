@@ -166,6 +166,55 @@ title: Home
       padding-bottom: 1rem;
     }
   }
+  /* 1. Force horizontal scrollbar on your carousel */
+.post-carousel {
+  display: flex;
+  overflow-x: scroll;            /* always show horizontal scrollbar */
+  gap: 20px;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;         /* for Firefox */
+  scrollbar-color: #007bff #e0e0e0;
+}
+
+/* 2. WebKit scrollbar styling (Chrome, Edge, Safari) */
+.post-carousel::-webkit-scrollbar {
+  height: 12px;
+}
+.post-carousel::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 6px;
+}
+.post-carousel::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 6px;
+}
+.post-carousel::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+}
+
+/* 3. If you also want vertical scrolling in the main content area: */
+.category-content {
+  flex: 1;
+  max-height: calc(100vh - 150px); /* adjust 150px to account for header/search bar height */
+  overflow-y: scroll;              /* always show vertical scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #007bff #e0e0e0;
+}
+
+.category-content::-webkit-scrollbar {
+  width: 12px;
+}
+.category-content::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 6px;
+}
+.category-content::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 6px;
+}
+.category-content::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+}
 </style>
 
 <!-- MAIN BLOG WRAPPER -->
