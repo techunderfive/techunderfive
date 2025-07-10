@@ -18,6 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# Tell Jekyll to use the theme
+theme: minimal-mistakes-jekyll
+navigation:
+  data: navigation.yml
+
 title: TechUnder5
 name: "TechUnder5"
 email: techunder5mins@gmail.com
@@ -32,12 +37,27 @@ twitter_username:
 github_username: 
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-archives 
 
+# Configure jekyll-archives (for collection-archive.html)
+# see https://mmistakes.github.io/minimal-mistakes/docs/collections/#archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+    - authors
+  layouts:
+    category: archive
+    tag:      archive
+    author:   archive
+  permalinks:
+    category: '/categories/:name/'
+    tag:      '/tags/:name/'
+    author:   '/authors/:name/'
 
 # Exclude from processing.
 # The following items will not be processed, by default.

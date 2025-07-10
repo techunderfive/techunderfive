@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article class="boxed-post">
+  <header class="boxed-post__header">
+    <h1 class="boxed-post__title">{{ page.title }}</h1>
+    <time datetime="{{ page.date | date_to_xmlschema }}" class="boxed-post__date">
+      {{ page.date | date: "%B %-d, %Y" }}
+    </time>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+ 
+</article>

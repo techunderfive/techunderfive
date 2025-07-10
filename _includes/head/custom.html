@@ -1,0 +1,103 @@
+<!-- _includes/head/custom.html -->
+<style>
+  /* ───────────────────────────────────────────────── Boxed Layout ───────────────────────────────────────────────── */
+  .layout--default {
+    margin: 0 2% !important;
+    padding: 1rem !important;
+    border: 1px solid #ddd !important;
+    box-sizing: border-box !important;
+  }
+  .initial-content,
+  .page__footer {
+    margin: 0 !important;
+    box-sizing: inherit !important;
+  }
+
+  /* ───────────────────────────────────────────────── Single-Post Box ───────────────────────────────────────────────── */
+  .boxed-post {
+    margin: 2rem 0 !important;
+    padding: 2rem !important;
+    border: 1px solid #ddd !important;
+    box-sizing: border-box !important;
+  }
+  .boxed-post__header {
+    margin-bottom: 1rem !important;
+    padding-bottom: 0.5rem !important;
+    border-bottom: 1px solid #ccc !important;
+  }
+  .boxed-post__title {
+    margin: 0 0 0.5rem !important;
+  }
+  .boxed-post__date {
+    font-size: 0.9rem !important;
+    color: #666 !important;
+  }
+
+  /* ───────────────────────────────────────────────── Archive & Grid Cards ───────────────────────────────────────────────── */
+  .archive-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    padding: 1rem 0;
+  }
+
+  /* Common card container */
+  .archive-item,
+  .post-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    box-sizing: border-box;
+    margin: 0 1rem 1rem 0;
+  }
+
+  /* Thumbnail image */
+  .archive-item__thumb img,
+  .post-card img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  /* Title styling */
+  .archive-item__title a,
+  .post-card h4 {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #2a7cc9;
+    margin: 0.75rem 1rem 0.5rem;
+    text-decoration: none;
+    text-align: left;
+  }
+  .archive-item__title a:hover,
+  .post-card a:hover h4 {
+    text-decoration: underline;
+  }
+
+  /* Excerpt styling */
+  .archive-item__excerpt,
+  .post-card p {
+    font-family: Arial, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #555;
+    margin: 0 1rem 1rem;
+    text-align: left;
+  }
+
+  /* Ensure flex-column stacking for archives */
+  .archive-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+</style>

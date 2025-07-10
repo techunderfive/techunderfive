@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="archive">
+    {% unless page.header.overlay_color or page.header.overlay_image %}
+      <h1 id="page-title" class="page__title"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
+        {{ page.title }}
+      </h1>
+    {% endunless %}
+
+    {%- comment -%}
+      Use paginator.posts if pagination is enabled, otherwise site.posts
+    {%- endcomment -%}
+    {% if paginator %}
+      {% assign collection_posts = paginator.posts %}
+    {% else %}
+      {% assign collection_posts = site.posts %}
+    {% endif %}
+
+    <!-- Card grid -->
+    <div class="archive-grid">
+      {% for post in collection_posts %}
+        <article class="archive-item">
+          {% if post.image %}
+            <a href="{{ post.url | relative_url }}" class="archive-item__thumb">
+              <img src="{{ post.image }}" alt="{{ post.title }}">
+            </a>
+          {% endif %}
+          <h3 class="archive-item__title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h3>
+          <p class="archive-item__excerpt">
+            {{ post.excerpt | strip_html | truncatewords: 20 }}
+          </p>
+        </article>
+      {% endfor %}
+    </div>
+    <!-- /Card grid -->
+
+    <!-- Pagination controls -->
+    {% if paginator and paginator.total_pages > 1 %}
+      <nav class="pagination" role="navigation">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">&laquo; Prev</a>
+        {% endif %}
+        {% for num in (1..paginator.total_pages) %}
+          {% if num == paginator.page %}
+            <span class="page current">{{ num }}</span>
+          {% else %}
+            <a href="{{ paginator.paginate_path | replace: ':num', num }}" class="page">{{ num }}</a>
+          {% endif %}
+        {% endfor %}
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path | relative_url }}" class="next">Next &raquo;</a>
+        {% endif %}
+      </nav>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,8 @@
+# _data/navigation.yml
+main:
+  - title: "Home"
+    url:   "/"
+  - title: "Consulting"
+    url:   "/consulting/"
+  - title: "Contact"
+    url:   "/contact/contact.html"
