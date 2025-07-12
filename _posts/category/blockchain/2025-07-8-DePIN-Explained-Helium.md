@@ -7,7 +7,7 @@ excerpt: Discover how DePIN (Decentralized Physical Infrastructure Networks) lev
 category: Blockchain
 tags: [DePIN, Helium, LoRaWAN, Filecoin, decentralized infrastructure, Web3, IoT]
 image: /assets/images/depin-explained-helium-thumbnail.jpg
-canonical_url: https://techunderfive.com/2025/07/08/depin-explained-blockchain-frontier/
+canonical_url: https://techunderfive.com/blockchain/2025/07/08/DePIN-Explained-Helium.html
 author: TechUnder5
 ---
 

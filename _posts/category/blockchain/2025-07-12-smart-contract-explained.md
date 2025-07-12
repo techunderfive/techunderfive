@@ -7,7 +7,7 @@ excerpt: Explore what smart contracts are, why they’re called ‘smart,’ how
 category: Blockchain
 tags: [smart-contracts, blockchain, ethereum, rogrammable-money, decentralized-applications, real world use-cases,smart contracts]
 image: /assets/images/smart-contract-thumbnail.png
-canonical_url: https://techunderfive.com/2025/07/12/smart-contract-explained.html
+canonical_url: https://techunderfive.com/blockchain/2025/07/12/smart-contract-explained.html
 author: TechUnder5
 ---
 
@@ -26,7 +26,7 @@ author: TechUnder5
   "datePublished": "2025-07-12",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://techunderfive.com/2025/07/12/smart-contract-explained.html"
+    "@id": "https://techunderfive.com/blockchain/2025/07/12/smart-contract-explained.html"
   },
   "publisher": {
     "@type": "Organization",
