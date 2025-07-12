@@ -26,7 +26,7 @@ author: TechUnder5
   "datePublished": "2025-07-08",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://techunderfive.com/2025/07/08/depin-explained-blockchain-frontier/"
+    "@id": "hhttps://techunderfive.com/blockchain/2025/07/08/DePIN-Explained-Helium.html"
   },
   "publisher": {
     "@type": "Organization",
