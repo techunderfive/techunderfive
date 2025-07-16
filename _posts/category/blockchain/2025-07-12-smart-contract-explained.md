@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Smart Contracts Deep Dive: From Basics to Real-World Use-Cases|Blockchain"
+title: "Smart Contracts Deep Dive: From Basics to Real-World Use-Cases | Blockchain"
 description: "Discover what smart contracts are, why they’re called “smart,” and how they power blockchain-based automation. Learn through easy analogies, view execution flows, weigh pros & cons, and explore real-world use cases—from DeFi lending and AMM DEXs to supply chain tracking, parametric insurance, NFT royalties, and tokenized real estate."
 date: 2025-07-12
 excerpt: Explore what smart contracts are, why they’re called ‘smart,’ how they live on blockchain, typical execution flows, pros & cons, and real-world examples..
@@ -16,7 +16,7 @@ author: TechUnder5
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Smart Contracts Deep Dive: From Basics to Real-World Use-Cases|Blockchain",
+  "headline": "Smart Contracts Deep Dive: From Basics to Real-World Use-Cases | Blockchain",
   "description": "Discover what smart contracts are, why they’re called “smart,” and how they power blockchain-based automation. Learn through easy analogies, view execution flows, weigh pros & cons, and explore real-world use cases—from DeFi lending and AMM DEXs to supply chain tracking, parametric insurance, NFT royalties, and tokenized real estate.",
   "image": "https://techunderfive.com/assets/images/smart-contract-thumbnail.png",
   "author": {
