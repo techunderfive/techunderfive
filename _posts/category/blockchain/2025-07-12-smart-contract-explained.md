@@ -42,11 +42,11 @@ author: TechUnder5
 Welcome to **TechUnder5**—your shortcut to mastering cutting-edge tech in under five minutes. Today’s topic: **Smart Contracts**, the self-executing blockchain programs that automate trustless agreements and power everything from DeFi to supply-chain tracking.
 
 ---
-<!-- This is for Video when it comes up
+
 <div style="text-align: left; margin-bottom: 20px;">
   <iframe width="560" height="315" 
-          src="https://www.youtube.com/embed/NdGvjTZw0_4"
-          title="DePIN Explained: Blockchain’s Next Frontier with Helium & Real-World Use Cases" 
+          src="https://www.youtube.com/embed/CC_6NHiK-w4"
+          title="Smart Contracts Deep Dive: From Basics to Real-World Use-Cases | Blockchain" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen>
@@ -57,23 +57,15 @@ Welcome to **TechUnder5**—your shortcut to mastering cutting-edge tech in unde
 {
   "@context": "http://schema.org",
   "@type": "VideoObject",
-  "name": "DePIN Explained: Blockchain’s Next Frontier with Helium & Real-World Use Cases",
-  "description": "Discover how DePIN (Decentralized Physical Infrastructure Networks) leverages blockchain to power real-world networks like Helium hotspots, LoRaWAN gateways, and Filecoin storage—plus a farming example to illustrate rewards in under 5 minutes.",
-  "thumbnailUrl": "https://img.youtube.com/vi/NdGvjTZw0_4/hqdefault.jpg",
+  "name": "Smart Contracts Deep Dive: From Basics to Real-World Use-Cases | Blockchain",
+  "description": "Discover what smart contracts are, why they’re called “smart,” and how they power blockchain-based automation. Learn through easy analogies, view execution flows, weigh pros & cons, and explore real-world use cases—from DeFi lending and AMM DEXs to supply chain tracking, parametric insurance, NFT royalties, and tokenized real estate.",
+  "thumbnailUrl": "https://img.youtube.com/vi/CC_6NHiK-w4/hqdefault.jpg",
   "uploadDate": "2025-07-08",
   "duration": "PT5M0S",
-  "contentUrl": "https://www.youtube.com/watch?v=NdGvjTZw0_4",
-  "embedUrl": "https://www.youtube.com/embed/NdGvjTZw0_4"
+  "contentUrl": "https://www.youtube.com/watch?v=CC_6NHiK-w4",
+  "embedUrl": "https://www.youtube.com/embed/CC_6NHiK-w4"
 }
-</script> -->
-
-<!--Remove once video added-->
-<div style="text-align: left; margin-bottom: 20px;">
-  <img src="/assets/images/smart-contract-thumbnail.png" 
-       alt="What are NFTs" 
-       style="max-width: 500px; height: auto; border-radius: 6px;">
-</div>
-
+</script>
 
 ## Table of Contents
 
