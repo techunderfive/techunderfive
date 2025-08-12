@@ -33,11 +33,12 @@ twitter_username:
 github_username: 
 
 # Build settings
-theme: minima
+# Use GitHub Pages build environment
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-include-cache
 
 # jekyll-seo-tag
 social:
