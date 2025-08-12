@@ -27,7 +27,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://techunderfive.com" # the base hostname & protocol for your site, e.g. http://example.com
 author:
   name:    "TechUnder5"
-image: :/assets/images/logonobg.png
+logo: /assets/images/logonobg.png
+image: /assets/images/banner.png
 twitter_username: 
 github_username: 
 
@@ -37,6 +38,18 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+# jekyll-seo-tag
+social:
+  name: TechUnder5
+  links:
+    - https://www.youtube.com/@techunder5
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/banner.png
 
 
 # Exclude from processing.

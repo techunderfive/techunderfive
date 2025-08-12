@@ -11,7 +11,7 @@ image: assets/images/about.png
   <a class="site-logo" href="https://www.youtube.com/@techunder5" target="_blank" rel="noopener noreferrer">
     <img src="/assets/images/logonobg.png" alt="TechUnder5 Logo" style="height: 100px;">
   </a>
-  <div style="margin-top: 0.5rem; font-size: 0.9rem; color: black;">
+  <div style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--color-text);">
     Watch us on YouTube
   </div>
 </div>

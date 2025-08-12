@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  {% seo %}
-  <meta charset="UTF-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <style>
-  body {
-    background-color: #E0E0E0;
-    color: #fff;
-  	}
-  </style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>{% if page.title %}{{ page.title }} | TechUnder5{% else %}TechUnder5{% endif %}</title>
-  <meta name="description" content="Official site of TechUnder5 – Simplifying tech in 5 minutes or less">
-  <meta name="author" content="TechUnder5">
-
-  <!-- Open Graph Tags -->
-  <meta name="title" content="TechUnder5">
-  <meta property="og:title" content="TechUnder5">
-  <meta property="og:description" content="Simplifying tech in 5 minutes or less – official website of TechUnder5.">
-  <meta property="og:url" content="https://techunderfive.com">
-  <meta property="og:site_name" content="TechUnder5">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://techunderfive.com/assets/images/banner.png">
-
-  <!-- Favicon -->
-  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "TechUnder5",
-    "url": "https://techunderfive.com",
-    "logo": "https://techunderfive.com/assets/images/logo.png",
-    "sameAs": [
-      "https://www.youtube.com/@techunder5"
-    ]
-  }
-  </script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+
+  <!-- SEO -->
+  {% seo %}
+
+  <!-- Scripts -->
+  <script src="/assets/js/site.js" defer></script>
 </head>
 <body>
-  <header style="background-color: #45699D; color: white; padding: 1rem;">
-    <div style="display:flex; justify-content:space-between; align-items:center;">
-     <a href="https://www.youtube.com/@techunder5" target="_blank" style="text-decoration: none; color: inherit;"> <h1 style="margin: 0;color:white;"></h1></a>
-      <nav>
-        <a href="/" style="color:white; margin-right:20px;">Home</a>
-        <a href="/consulting" style="color:white; margin-right:20px;">Consulting</a>
-        <a href="/contact/contact.html" style="color:white;margin-right:20px;">Contact</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="TechUnder5 home">
+        <img src="/assets/images/logonobg.png" alt="TechUnder5 logo" class="brand-mark" />
+        <span class="brand-name">TechUnder5</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        <ul id="primary-nav" class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#blockchain">Blockchain</a></li>
+          <li><a href="/#cloud">Cloud</a></li>
+          <li><a href="/#quantum-computing">Quantum Computing</a></li>
+          {% assign about_post = site.posts | where: 'title', 'Welcome to TechUnder5' | first %}
+          {% if about_post %}
+          <li><a href="{{ about_post.url | relative_url }}">About</a></li>
+          {% else %}
+          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+          {% endif %}
+          <li><a href="/contact/contact.html">Contact</a></li>
+        </ul>
       </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
     </div>
   </header>
 
-  <main style="padding: 2rem;">
+  <main class="container site-main">
     {{ content }}
   </main>
 
-<footer style="text-align: center; padding: 1rem; background-color: #f0f0f0; color: #333; font-size: 0.9rem; margin-top: 2rem;">
-  &copy; {{ site.time | date: "%Y" }} <strong>TechUnder5</strong> — hosted at <a href="https://techunderfive.com" style="color: #1a73e8; text-decoration: none;">techunderfive.com</a>
-</footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="TechUnder5 home">
+          <img src="/assets/images/logonobg.png" alt="TechUnder5 logo" class="brand-mark" />
+          <span class="brand-name">TechUnder5</span>
+        </a>
+      </div>
+      <div class="footer-meta">
+        <span>&copy; {{ site.time | date: "%Y" }} TechUnder5</span>
+        <span>— Clear tech explainers in under 5 minutes.</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.youtube.com/@techunder5" target="_blank" rel="noopener" aria-label="TechUnder5 on YouTube">YouTube</a>
+        <a href="/feed.xml" aria-label="RSS feed">RSS</a>
+        <a href="/sitemap.xml" aria-label="Sitemap">Sitemap</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

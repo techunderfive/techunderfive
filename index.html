@@ -3,15 +3,17 @@ layout: default
 title: Home
 ---
 
-<div style="text-align: center; margin-bottom: 30px;">
-  <img src="/assets/images/banner.png" alt="TechUnder5 Banner" style="width: 100%; max-height: 400px; object-fit: cover;">
-</div>
+<section aria-label="Hero">
+  <div style="text-align: center; margin-bottom: 30px;">
+    <img src="/assets/images/banner.png" alt="TechUnder5 banner" style="width: 100%; max-height: 420px; object-fit: cover; border-radius: 12px;">
+  </div>
+</section>
 
 <h1 style="
   font-family: 'Poppins', sans-serif;
   font-size: 2.00rem;
   font-weight: 600;
-  color:#333333;
+  color: var(--color-text);
   letter-spacing: 0.3px;
   text-transform: uppercase;
   text-align: center;
@@ -19,31 +21,30 @@ title: Home
 <p style="
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
-  color:#333333;
+  color: var(--color-text);
 ">Having worked across multiple Tech companies including at FAANG, I’ve learned firsthand that it’s not knowledge, but clarity, that drives real understanding.Whether you’re curious about how something works or trying to level up your tech skills, I’m here to make things make sense — one concept at a time.</p>
 
 <!-- SEARCH BAR -->
 
 <div style="text-align: center; margin: 2rem 0;">
-  <input id="searchInput" type="text" placeholder="Search articles..." style="width: 60%; padding: 10px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc;">
-</div>
-
-<ul id="results-container" style="width: 60%; margin: 0 auto; padding: 1rem; list-style: none;"></ul>
-
-<!-- Add script AFTER page is fully loaded -->
-<script src="https://unpkg.com/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    SimpleJekyllSearch({
-      searchInput: document.getElementById('searchInput'),
-      resultsContainer: document.getElementById('results-container'),
-      json: '/search.json',
-      searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-      noResultsText: 'No results found',
-      fuzzy: false
+  <label for="searchInput" class="sr-only">Search articles</label>
+  <input id="searchInput" type="text" placeholder="Search articles..." style="width: min(720px, 92%); padding: 12px 14px; font-size: 1rem; border-radius: 12px; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text);">
+  <p class="muted" style="margin-top: 8px; font-size: 0.9rem;">Type to filter posts in real time or press Enter to search all content.</p>
+  <ul id="results-container" style="width: min(720px, 92%); margin: 0.5rem auto 0; padding: 0.5rem 1rem; list-style: none; text-align: left;"></ul>
+  <script src="https://unpkg.com/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('searchInput'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json',
+        searchResultTemplate: '<li><a href="{url}"><strong>{title}</strong></a></li>',
+        noResultsText: '<li class="muted">No results found</li>',
+        fuzzy: false
+      });
     });
-  });
-</script>
+  </script>
+</div>
 
  
 <!--Filter by category
@@ -62,7 +63,7 @@ title: Home
       {% endif %}
       <div style="padding: 15px;">
         <h3 style="margin-top: 0;"><a href="{{ post.url | relative_url }}" style="text-decoration: none; color: #007acc;">{{ post.title }}</a></h3>
-        <p style="font-size: 0.9rem; color: #555;">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        <p style="font-size: 0.9rem; color: var(--color-text);">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
         <a href="{{ post.url | relative_url }}" style="font-weight: bold; color: #007acc;">Read more →</a>
       </div>
     </div>
@@ -73,34 +74,10 @@ title: Home
 
 <style>
   .blog-wrapper {
-    display: flex;
-    gap: 2rem;
     margin-top: 2rem;
   }
 
-  .category-sidebar {
-    flex: 0 0 180px;
-    border-right: 2px solid #ddd;
-    padding-right: 1rem;
-  }
-
-  .category-sidebar ul {
-    list-style: none;
-    padding-left: 0;
-  }
-
-  .category-sidebar li {
-    margin-bottom: 1rem;
-  }
-
-  .category-sidebar a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
   .category-content {
-    flex: 1;
     overflow-x: hidden;
   }
 
@@ -124,10 +101,11 @@ title: Home
   .post-card {
     max-width: 280px;
     flex-shrink: 0;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
     padding: 10px;
+    box-shadow: var(--shadow-sm);
   }
 
   .post-card img {
@@ -142,10 +120,7 @@ title: Home
     font-size: 1.1rem;
   }
 
-  .post-card p {
-    font-size: 0.9rem;
-    color: #444;
-  }
+  .post-card p { font-size: 0.9rem; color: var(--color-text); }
 
   .see-more {
     display: inline-block;
@@ -156,68 +131,50 @@ title: Home
   }
 
   @media (max-width: 768px) {
-    .blog-wrapper {
-      flex-direction: column;
-    }
-
-    .category-sidebar {
-      border-right: none;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 1rem;
-    }
+    .blog-wrapper { margin-top: 1rem; }
   }
-  /* 1. Force horizontal scrollbar on your carousel */
-.post-carousel {
-  display: flex;
-  overflow-x: scroll;            /* always show horizontal scrollbar */
-  gap: 20px;
-  padding-bottom: 0.5rem;
-  scrollbar-width: thin;         /* for Firefox */
-  scrollbar-color: #007bff #e0e0e0;
-}
+  /* Horizontal scroll appears only when needed */
+  .post-carousel {
+    display: flex;
+    overflow-x: auto;            /* show scrollbar only on overflow */
+    gap: 20px;
+    padding-bottom: 0.5rem;
+    scrollbar-width: thin;       /* for Firefox */
+    scrollbar-color: var(--color-primary) var(--color-border);
+  }
 
-/* 2. WebKit scrollbar styling (Chrome, Edge, Safari) */
+/* WebKit scrollbar styling (Chrome, Edge, Safari) */
 .post-carousel::-webkit-scrollbar {
   height: 12px;
 }
 .post-carousel::-webkit-scrollbar-track {
-  background: #e0e0e0;
+  background: var(--color-border);
   border-radius: 6px;
 }
 .post-carousel::-webkit-scrollbar-thumb {
-  background: #007bff;
+  background: var(--color-primary);
   border-radius: 6px;
 }
 .post-carousel::-webkit-scrollbar-thumb:hover {
-  background: #0056b3;
+  background: var(--color-primary-600);
 }
 </style>
 
 <!-- MAIN BLOG WRAPPER -->
 <div class="blog-wrapper">
 
-  <!-- LEFT SIDEBAR: CATEGORY LIST -->
-  <div class="category-sidebar">
-    <ul>
-      {% assign all_categories = site.posts | map: 'category' | sort % | uniq %}
-      {% assign categories = "" | split: "" %}
-      {% if all_categories contains "about" %}
-        {% assign categories = categories | push: "about" %}
-      {% endif %}
+  <!-- CATEGORY CONTENTS -->
+  {% assign all_categories = site.posts | map: 'category' | sort | uniq %}
+  {% assign categories = "" | split: "" %}
+  {% if all_categories contains "about" %}
+    {% assign categories = categories | push: "about" %}
+  {% endif %}
+  {% for cat in all_categories %}
+    {% unless cat == "about" %}
+      {% assign categories = categories | push: cat %}
+    {% endunless %}
+  {% endfor %}
 
-      {% for cat in all_categories %}
-        {% unless cat == "about" %}
-          {% assign categories = categories | push: cat %}
-        {% endunless %}
-      {% endfor %}
-
-      {% for category in categories %}
-        <li><a href="#{{ category | slugify }}">{{ category | capitalize }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-
-  <!-- RIGHT: CATEGORY CONTENTS -->
   <div class="category-content">
     {% for category in categories %}
       {% assign posts_in_category = site.posts | where: "category", category %}
