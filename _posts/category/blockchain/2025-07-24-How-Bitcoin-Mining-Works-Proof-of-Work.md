@@ -88,7 +88,7 @@ Today, we’ll break down one of the most fascinating parts of cryptocurrency: *
 
 The **consensus mechanism** is the rulebook that ensures **everyone in the Bitcoin network agrees on a single version of truth** — like which transactions are valid and in what order they happened.
 
-Bitcoin uses a type of consensus called **Proof of Work (PoW)**. Here's how it works in simple terms:
+Bitcoin uses a type of consensus called **[Proof of Work (PoW)](/blockchain/2025/08/15/Proof-of-Work-Explained.html)**. Here's how it works in simple terms:
 
 ### Imagine a Giant Shared Ledger
 Everyone (called **nodes**) keeps a copy of Bitcoin’s ledger — a record of all transactions.
@@ -99,7 +99,7 @@ Who decides which one is true?
 That’s where consensus comes in.
 
 ### Proof of Work: Let the Computers Decide
-In Proof of Work, miners compete to solve a **math puzzle**.  
+In **[Proof of Work](/blockchain/2025/08/15/Proof-of-Work-Explained.html)**, miners compete to solve a **math puzzle**.  
 The **first** one to solve it gets to propose the next valid block of transactions.
 
 Once a miner solves the puzzle and shares the block:
@@ -139,9 +139,9 @@ Let’s walk through a simple transaction example:
 
 ---
 
-## Why the “Puzzle”? – Proof-of-Work
+## Why the "Puzzle"? – Proof-of-Work
 
-The *puzzle* that miners solve isn’t just for fun — it’s the heart of Bitcoin’s **Proof-of-Work** consensus system. It's objective is to decide which transactions are added to the blockchain — *without trusting a central authority*.
+The *puzzle* that miners solve isn't just for fun — it's the heart of Bitcoin's **[Proof-of-Work](/blockchain/2025/08/15/Proof-of-Work-Explained.html)** consensus system. It's objective is to decide which transactions are added to the blockchain — *without trusting a central authority*.
 
 ### Puzzle Mechanics:
 - Miners collect valid transactions from the mempool.

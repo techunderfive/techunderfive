@@ -80,7 +80,7 @@ At the same time, astronomical gas fees on Ethereum turned routine minting or tr
 ---
 ## What Are Gas Fees—and Why They Complicate Minting?
 
-**Gas fees** are the transaction costs you pay to process actions on an Ethereum-style blockchain. Every operation—sending ETH, trading tokens, or minting an NFT—requires computational work by the network’s validators (or “miners” on proof-of-work chains). Gas fees compensate them for that work, measured in “gwei” (a tiny fraction of one ETH).
+**Gas fees** are the transaction costs you pay to process actions on an Ethereum-style blockchain. Every operation—sending ETH, trading tokens, or minting an NFT—requires computational work by the network's validators (or "miners" on [proof-of-work chains](/blockchain/2025/08/15/Proof-of-Work-Explained.html)). Gas fees compensate them for that work, measured in "gwei" (a tiny fraction of one ETH).
 
 ### Why High Gas Fees Make Minting Tough
 

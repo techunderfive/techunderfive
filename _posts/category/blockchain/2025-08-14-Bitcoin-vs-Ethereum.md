@@ -103,7 +103,7 @@ Today, we're comparing **Bitcoin and Ethereum** — the Coke vs. Pepsi of crypto
 
 For decentralized systems to work without a central authority, they need consensus mechanisms to agree on valid transactions.
 
-- **Bitcoin** uses **Proof of Work (PoW)** — miners solve complex puzzles to validate transactions and secure the network. It's highly secure but energy-intensive.  
+- **Bitcoin** uses **[Proof of Work (PoW)](/blockchain/2025/08/15/Proof-of-Work-Explained.html)** — miners solve complex puzzles to validate transactions and secure the network. It's highly secure but energy-intensive.  
 - **Ethereum** started with PoW but in 2022 switched to **Proof of Stake (PoS)** via *The Merge*. Validators stake ETH to propose and validate new blocks — making the process faster and more energy-efficient.
 
 ---
