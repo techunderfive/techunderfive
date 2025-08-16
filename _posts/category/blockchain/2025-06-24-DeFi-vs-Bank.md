@@ -125,11 +125,11 @@ Now let’s see the **same process** in the **DeFi world**:
   <tbody>
     <tr>
       <td style="border: 1px solid #ddd; padding: 10px;">Bank policies &amp; legal docs</td>
-      <td style="border: 1px solid #ddd; padding: 10px;">**[Smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)** (code)</td>
+      <td style="border: 1px solid #ddd; padding: 10px;">Smart contracts (code)</td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 10px;">Loan officers / managers</td>
-      <td style="border: 1px solid #ddd; padding: 10px;">Automated logic in **[smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)**</td>
+      <td style="border: 1px solid #ddd; padding: 10px;">Automated logic in smart contracts</td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 10px;">Internal bank ledger</td>
