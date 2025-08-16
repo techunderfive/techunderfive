@@ -6,7 +6,7 @@ layout: post
 author: TechUnder5
 image: /assets/images/quantum-thumbnail.png
 category: Quantum Computing
-excerpt: "Understanding the most important quantum algorithms and how they could revolutionize computing."
+excerpt: "Understanding the most important quantum algorithms and how they could revolutionize computing.Learn just under 5 mintues..."
 date: 2025-01-22
 ---
 

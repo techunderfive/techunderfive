@@ -20,14 +20,14 @@ layout: default
 <div class="category-posts">
   {% assign cat_posts = site.categories[page.category] %}
   {% for post in cat_posts %}
-    <article class="card" style="width:300px;">
+    <article class="responsive-card">
       <a href="{{ post.url | relative_url }}">
-        <img src="{{ post.image | default: site.image }}" alt="{{ post.title }}" style="width: 100%; height: 180px; object-fit: cover;">
+        <div class="thumbnail-container">
+          <img src="{{ post.image | default: site.image }}" alt="{{ post.title }}" loading="lazy">
+        </div>
+        <h3 class="card-title">{{ post.title }}</h3>
       </a>
-      <div class="card-body">
-        <h3 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <p class="muted">{{ post.excerpt | default: post.content | strip_html | truncate: 120 }}</p>
-      </div>
+      <p class="muted">{{ post.excerpt | default: post.content | strip_html | truncate: 120 }}</p>
     </article>
   {% endfor %}
 </div>

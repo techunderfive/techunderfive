@@ -6,7 +6,7 @@ layout: post
 author: TechUnder5
 image: /assets/images/quantum-thumbnail.png
 category: Quantum Computing
-excerpt: "How quantum error correction works and why it's essential for building practical quantum computers."
+excerpt: "How quantum error correction works and why it's essential for building practical quantum computers.Learn just under 5 mintues..."
 date: 2025-01-21
 ---
 
