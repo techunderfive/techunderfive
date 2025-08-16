@@ -46,6 +46,38 @@ body {
 
 img { max-width: 100%; height: auto; }
 
+/* Dark mode: Only invert purely black images */
+[data-theme="dark"] img[src*="consensus-mechanism"] {
+  filter: invert(1) brightness(0.8) contrast(1.2);
+}
+
+[data-theme="dark"] img[src*="block-header"] {
+  filter: invert(1) brightness(0.8) contrast(1.2);
+}
+
+[data-theme="dark"] img[src*="Blocksolved"] {
+  filter: invert(1) brightness(0.8) contrast(1.2);
+}
+
+[data-theme="dark"] img[src*="smart-contract-flowchart"] {
+  filter: invert(1) brightness(0.8) contrast(1.2);
+}
+
+/* Dark mode: Convert black to light grey in all images */
+[data-theme="dark"] img {
+  filter: brightness(0.9) contrast(1.1) saturate(0.9);
+}
+
+/* Dark mode: Fix table headers that are white and invisible */
+[data-theme="dark"] table th {
+  background-color: #1f2937 !important;
+  color: #e5e7eb !important;
+}
+
+[data-theme="dark"] table td {
+  color: #e5e7eb !important;
+}
+
 a { color: var(--color-primary); text-decoration: none; }
 a:hover { color: var(--color-primary-600); }
 
