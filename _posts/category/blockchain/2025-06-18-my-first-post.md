@@ -110,7 +110,7 @@ Blockchain can give people control over their own identity and documents.
 - It prevents tampering, data leaks, or identity theft
 
 **Decentralized Finance (DeFi)**
-DeFi lets people use financial services without needing banks.You can lend, borrow, or earn interest using smart contracts
+DeFi lets people use financial services without needing banks.You can lend, borrow, or earn interest using **[smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)**
 
 - Everything runs automatically on the blockchain
 - No paperwork, no middlemen, and it’s open 24/7

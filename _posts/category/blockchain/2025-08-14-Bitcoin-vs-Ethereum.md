@@ -85,7 +85,7 @@ Today, we're comparing **Bitcoin and Ethereum** — the Coke vs. Pepsi of crypto
 ## Origins and Purpose
 
 - **Bitcoin** was launched in 2009 by the mysterious *Satoshi Nakamoto* as a **peer-to-peer digital currency**, aiming to replace cash with a decentralized alternative.  
-- **Ethereum** launched in 2015, proposed by *Vitalik Buterin*, as a **programmable blockchain** — a platform for **smart contracts** and **decentralized applications (dApps)**, enabling the creation of entire ecosystems beyond just money.
+- **Ethereum** launched in 2015, proposed by *Vitalik Buterin*, as a **programmable blockchain** — a platform for **[smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)** and **decentralized applications (dApps)**, enabling the creation of entire ecosystems beyond just money.
 
 **In short:**
 - Bitcoin is seen as **Digital Gold** — a store of value and medium of exchange.  
@@ -113,7 +113,7 @@ For decentralized systems to work without a central authority, they need consens
 - **Bitcoin** processes a block roughly every **10 minutes**.  
 - **Ethereum** processes a block about every **12 seconds**.
 
-This makes Ethereum much faster, especially for applications like dApps and smart contracts.
+This makes Ethereum much faster, especially for applications like dApps and **[smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)**.
 
 <div style="text-align: left; margin-bottom: 10px;">
   <img src="/assets/images/Speed-Performance.png" 
@@ -126,7 +126,7 @@ This makes Ethereum much faster, especially for applications like dApps and smar
 
 While both use distributed ledgers and cryptography, they differ in what’s stored and executed:  
 - **Bitcoin:** Mostly financial transactions — a secure, global ledger.  
-- **Ethereum:** Transactions can include executable code — enabling smart contracts to run directly on-chain, making Ethereum function like a **virtual machine**.
+- **Ethereum:** Transactions can include executable code — enabling **[smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)** to run directly on-chain, making Ethereum function like a **virtual machine**.
 
 ---
 
@@ -150,7 +150,7 @@ While both use distributed ledgers and cryptography, they differ in what’s sto
 ## Developer Interaction
 
 - **Bitcoin:** Minimal scripting language for security; not meant for complex programs.  
-- **Ethereum:** Uses its own language, **Solidity**, to create and run smart contracts on the Ethereum Virtual Machine (EVM).
+- **Ethereum:** Uses its own language, **Solidity**, to create and run **[smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)** on the Ethereum Virtual Machine (EVM).
 
 ---
 
@@ -168,7 +168,7 @@ While both use distributed ledgers and cryptography, they differ in what’s sto
 
 - **NFTs & gaming** — own and trade digital assets : On Ethereum-based platforms like OpenSea and Axie Infinity, users can buy, sell, and trade NFTs (non-fungible tokens) representing digital art, collectibles, or in-game items. Unlike traditional games, players truly own their assets and can sell or trade them outside the game ecosystem.
 
-- **Smart contracts** — self-running programs for trustless agreements : **Smart contracts** are pieces of code that execute automatically when conditions are met, eliminating the need for middlemen. They are used in everything from **decentralized insurance** (like Nexus Mutual) to **automated royalty payments** for artists.
+- **[Smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)** — self-running programs for trustless agreements : **[Smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)** are pieces of code that execute automatically when conditions are met, eliminating the need for middlemen. They are used in everything from **decentralized insurance** (like Nexus Mutual) to **automated royalty payments** for artists.
 
 - **Token creation** — launch new cryptocurrencies on Ethereum : Anyone can **create** and **deploy** their own token on Ethereum using standards like ERC-20 for fungible tokens or ERC-721 for NFTs. Many well-known projects, such as Chainlink (LINK) and Shiba Inu (SHIB), started as Ethereum-based tokens before growing into large ecosystems.
 

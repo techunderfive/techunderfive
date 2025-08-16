@@ -49,7 +49,7 @@ Let’s break it down in plain English.
 ## What is DeFi (Decentralized Finance)?
 
 **DeFi** is a new kind of financial system built on **blockchain technology**.  
-It replaces traditional banks and middlemen with **smart contracts**—automated code that handles money.
+It replaces traditional banks and middlemen with **[smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)**—automated code that handles money.
 
 With DeFi, you can:
 - **Lend**, **borrow**, **earn interest**, or **trade assets** without a bank.
@@ -92,14 +92,14 @@ Now let’s see the **same process** in the **DeFi world**:
 
 1. Alice connects her **crypto wallet** to a DeFi app.
 2. She deposits **USDC** (a stablecoin) into a **lending pool**.
-3. A **smart contract** handles the transaction—**instantly**.
+3. A **[smart contract](/blockchain/2025/07/12/smart-contract-explained.html)** handles the transaction—**instantly**.
 4. The pool lends Alice’s funds to a **borrower**, backed by **crypto collateral**.
 5. The borrower repays with **interest**.
-6. The **smart contract** splits the interest and sends Alice her share.
+6. The **[smart contract](/blockchain/2025/07/12/smart-contract-explained.html)** splits the interest and sends Alice her share.
 7. There’s **no middleman**—everything runs on code.
 
 ### The Catch:
-- **No safety nets** — if a smart contract fails, there’s no insurance or recovery.
+- **No safety nets** — if a **[smart contract](/blockchain/2025/07/12/smart-contract-explained.html)** fails, there's no insurance or recovery.
 - **Irreversible transactions** — once sent, funds are often gone for good.
 - **No human support** — no helpline, no dispute resolution.
 - **Requires technical know-how** — mistakes in wallet handling or gas fees can cost money.
@@ -125,11 +125,11 @@ Now let’s see the **same process** in the **DeFi world**:
   <tbody>
     <tr>
       <td style="border: 1px solid #ddd; padding: 10px;">Bank policies &amp; legal docs</td>
-      <td style="border: 1px solid #ddd; padding: 10px;">Smart contracts (code)</td>
+      <td style="border: 1px solid #ddd; padding: 10px;">**[Smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)** (code)</td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 10px;">Loan officers / managers</td>
-      <td style="border: 1px solid #ddd; padding: 10px;">Automated logic in smart contracts</td>
+      <td style="border: 1px solid #ddd; padding: 10px;">Automated logic in **[smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)**</td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 10px;">Internal bank ledger</td>
@@ -172,7 +172,7 @@ Let’s compare what each system **does well**:
 ### DeFi Excels At:
 - **Global access** — anyone with a wallet can join
 - **24/7/365 availability**
-- No middlemen — only **smart contracts**
+- No middlemen — only **[smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)**
 - **Non-custodial** asset control — you own your funds
 - **Higher yields** (but higher risks)
 - **Transparency** — anyone can audit the code
@@ -190,7 +190,7 @@ Let’s compare what each system **does well**:
 | Government Integration       | ✅ Yes                            | ❌ No                                |
 | 24/7 Access                  | ❌ Limited                        | ✅ Always                            |
 | Permissionless Participation| ❌ No (KYC required)              | ✅ Yes                              |
-| Programmable Finance         | ❌ No                             | ✅ Smart Contracts                   |
+| Programmable Finance         | ❌ No                             | ✅ **[Smart Contracts](/blockchain/2025/07/12/smart-contract-explained.html)**                   |
 | Non-Custodial Control        | ❌ Bank holds your funds          | ✅ You control your funds           |
 
 ---

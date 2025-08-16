@@ -128,7 +128,7 @@ A **Decentralized Exchange** (DEX) removes the middleman — not even the platfo
 Here’s how it works:
 - You connect your own wallet to trade **directly on the blockchain**.  
 - No sign-ups, no KYC, no centralized authority.  
-- Trades are executed via **smart contracts** — bits of blockchain code that handle token swaps, fees, and more.  
+- Trades are executed via **[smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)** — bits of blockchain code that handle token swaps, fees, and more.  
 - Many DEX platforms are **open-source** and **community-governed**.
 
 **Popular examples:** Uniswap, PancakeSwap, dYdX.
@@ -165,7 +165,7 @@ A DEX is like **hosting a garage sale**:
 - You control your funds at all times – With DEXs, your crypto stays in your personal wallet until the trade is executed, removing the risk of an exchange freezing or losing your assets.
 - More privacy, no ID verification required – DEXs typically don’t require KYC (Know Your Customer) checks, allowing you to trade without handing over sensitive personal information.
 - Access to smaller or early-stage tokens – Many new or niche cryptocurrencies launch on DEXs before making it to big centralized platforms, giving you early access to emerging projects.
-- Censorship-resistant — trades can’t be blocked – Because trades are executed on the blockchain through smart contracts, no authority can prevent a transaction from taking place.
+- Censorship-resistant — trades can't be blocked – Because trades are executed on the blockchain through **[smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)**, no authority can prevent a transaction from taking place.
 - Borderless — trade anywhere with internet + wallet – All you need is an internet connection and a crypto wallet; location restrictions and banking barriers don’t apply. 
 
 ---
@@ -184,7 +184,7 @@ A DEX is like **hosting a garage sale**:
 - Steeper learning curve, complex UI – DEX interfaces often assume some knowledge of wallets, blockchain transactions, and token standards, which can be overwhelming for beginners.
 - No customer support if you make a mistake – If you send funds to the wrong address or interact with the wrong contract, there’s no centralized help desk to reverse the transaction.
 - Gas fees (also known as transaction fees) can spike during network congestion – On blockchains like Ethereum, busy periods can cause fees to soar, making small trades uneconomical.
-- Smart contract bugs can cause fund loss – Since trades are governed by blockchain code, vulnerabilities in the smart contracts can be exploited by attackers, leading to loss of funds if the code isn’t well-audited. 
+- **[Smart contract](/blockchain/2025/07/12/smart-contract-explained.html)** bugs can cause fund loss – Since trades are governed by blockchain code, vulnerabilities in the **[smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)** can be exploited by attackers, leading to loss of funds if the code isn't well-audited. 
 
 ---
 

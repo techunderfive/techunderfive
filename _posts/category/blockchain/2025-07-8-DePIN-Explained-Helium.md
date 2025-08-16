@@ -84,7 +84,7 @@ Welcome to **TechUnder5**—the channel where we break down cutting-edge tech in
 
 Imagine a world where the very backbone of our digital lives—Internet gateways, storage servers, compute clusters—isn’t owned by a handful of tech giants, but by everyday people. Welcome to DePIN, short for **Decentralized Physical Infrastructure Network**. Think of it as **Airbnb** for the internet: instead of renting out a spare room, you host bandwidth, storage, or compute power—and get paid in cryptocurrency.
 
-Under the hood, DePIN runs on **blockchain** and **smart contracts**. These self-executing pieces of code automatically:
+Under the hood, DePIN runs on **blockchain** and **[smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)**. These self-executing pieces of code automatically:
 
 **Verify Participation** – proving exactly who’s hosting what, where, and when.
 
@@ -114,10 +114,10 @@ In essence, blockchain in DePIN does far more than move money—it’s the trans
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 10px;">Tokenomics & Reward Engine</td>
-      <td style="border: 1px solid #ddd; padding: 10px;">Native token economics for incentive alignment:<br>• Minting rules (when/how tokens are created)<br>• Automated reward payouts via smart contracts<br>• Staking & slashing to secure honest behavior</td>
+      <td style="border: 1px solid #ddd; padding: 10px;">Native token economics for incentive alignment:<br>• Minting rules (when/how tokens are created)<br>• Automated reward payouts via **[smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)**<br>• Staking & slashing to secure honest behavior</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #ddd; padding: 10px;">Smart Contract Layer</td>
+      <td style="border: 1px solid #ddd; padding: 10px;">**[Smart Contract](/blockchain/2025/07/12/smart-contract-explained.html)** Layer</td>
       <td style="border: 1px solid #ddd; padding: 10px;">Self-executing code automating:<br>• Node onboarding & identity<br>• Payment triggers upon successful proofs<br>• Protocol upgrade proposals</td>
     </tr>
     <tr>

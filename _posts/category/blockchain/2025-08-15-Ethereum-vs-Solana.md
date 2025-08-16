@@ -40,7 +40,7 @@ author: TechUnder5
 </script>
 
 **Welcome to TechUnder5 — where tech meets simplicity in just under 5 minutes!**  
-Today, we’re diving into a hot debate: **Ethereum vs Solana**. One is the original smart contract pioneer, the other is the speed demon of crypto.
+Today, we're diving into a hot debate: **Ethereum vs Solana**. One is the original **[smart contract](/blockchain/2025/07/12/smart-contract-explained.html)** pioneer, the other is the speed demon of crypto.
 
 ---
 
@@ -82,7 +82,7 @@ Today, we’re diving into a hot debate: **Ethereum vs Solana**. One is the orig
 
 Ethereum launched in **2015**, while Solana joined the scene in **2020**. Despite the age gap, both blockchains let you:
 - Build decentralized apps (dApps)  
-- Deploy smart contracts  
+- Deploy **[smart contracts](/blockchain/2025/07/12/smart-contract-explained.html)**  
 - Power NFTs, DeFi platforms, and blockchain games  
 
 At their core is a **consensus mechanism** — the “voting system” that ensures everyone agrees on which transactions are valid before adding them to the blockchain.  
@@ -125,8 +125,6 @@ From a decentralization standpoint, Ethereum operates with thousands of validato
 Solana, while still decentralized in structure, currently has far fewer validators than Ethereum. This smaller validator set allows for faster transaction processing but also means a higher concentration of control. In practice, this can make the network more agile but potentially more vulnerable to coordinated disruptions or governance influence from large stakeholders.
 
 The trade-off is clear — Ethereum prioritizes maximum decentralization and security, while Solana leans toward speed and efficiency, accepting a more centralized validator landscape.
-
-**Bottom line**: Solana is not “fully centralized” — it’s still a permissionless blockchain — but compared to Ethereum, its smaller validator base and higher participation barriers make it less decentralized.
 The trade-off is speed and throughput — by having fewer, more powerful validators, Solana can process thousands of transactions per second at low cost.
 
 <div style="text-align: left; margin-bottom: 10px;">
