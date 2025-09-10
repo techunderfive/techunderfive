@@ -36,6 +36,14 @@
 
 /* Global */
 html { scroll-behavior: smooth; }
+/* Keep primary page scrollbar visible; prevent horizontal overflow */
+html { scrollbar-width: auto; -ms-overflow-style: auto; }
+body { -ms-overflow-style: auto; overflow-x: hidden; }
+/* Show standard scrollbars for the page */
+html::-webkit-scrollbar, body::-webkit-scrollbar { width: 12px; height: 12px; }
+/* Hide secondary (nested) scrollbars across the layout while preserving scroll */
+*:not(html):not(body) { scrollbar-width: none; -ms-overflow-style: none; }
+*:not(html):not(body)::-webkit-scrollbar { width: 0; height: 0; display: none; }
 body {
   margin: 0;
   padding: 0;
