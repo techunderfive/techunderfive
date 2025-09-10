@@ -266,7 +266,7 @@ title: Home
       {% if posts_in_category.size > 0 %}
         <div class="category-block" id="{{ category | slugify }}">
           <div class="category-title">
-            <h2>{{ category | capitalize }}</h2>
+            <h2>{{ category }}</h2>
             <span class="category-stats">{{ posts_in_category.size }} posts</span>
           </div>
           <div class="post-grid">
@@ -286,13 +286,13 @@ title: Home
             <div class="category-footer">
               <span class="post-count">Showing 4 of {{ posts_in_category.size }} posts</span>
               {% if category == "Quantum Computing" %}
-                <a class="see-more" href="/category/quantumComputing/">View All {{ category | capitalize }} Posts →</a>
+                <a class="see-more" href="/category/quantumComputing/">View All {{ category }} Posts →</a>
               {% elsif category == "Cloud" %}
-                <a class="see-more" href="/category/cloud/">View All {{ category | capitalize }} Posts →</a>
+                <a class="see-more" href="/category/cloud/">View All {{ category }} Posts →</a>
               {% elsif category == "Blockchain" %}
-                <a class="see-more" href="/category/blockchain/">View All {{ category | capitalize }} Posts →</a>
+                <a class="see-more" href="/category/blockchain/">View All {{ category }} Posts →</a>
               {% else %}
-                <a class="see-more" href="/category/{{ category | slugify }}/">View All {{ category | capitalize }} Posts →</a>
+                <a class="see-more" href="/category/{{ category | slugify }}/">View All {{ category }} Posts →</a>
               {% endif %}
             </div>
           {% endif %}
