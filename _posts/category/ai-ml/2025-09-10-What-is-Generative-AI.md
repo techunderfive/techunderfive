@@ -55,11 +55,19 @@ GenAI is advanced autocomplete across many media types.Popular GenAI tools you�
 ---
 ## How GenAI works (in plain English)
 
-**Pre-training**: The model ingests massive datasets and learns to predict the next token in text (or the next chunk in images/audio).
+It’s industrial-strength autocomplete. The model learns patterns from lots of examples, then **predicts the next piece** (a word/token, a pixel patch, an audio chunk) over and over until it’s done.
 
-**Fine-tuning/Instruction tuning (optional)**: It’s refined to follow instructions or perform specific tasks.
+**1) Pre-training**
+- The **model** (learned mathematical function) ingests huge datasets and learns to **predict what comes next**.
+- Text models learn **next-token prediction**; image/video models often learn to **remove noise** step-by-step (diffusion) to form a picture or frame.
 
-**Inference (you using it)**: Given a prompt, it samples the most probable next token repeatedly until it finishes.It use parameters to predict the next word/token and continues till the model believes it has reached a probable pattern.
+**2) Fine-tuning / Instruction-tuning (optional)**
+- After pre-training, the model is refined to **follow instructions**, adopt safer/helpful behavior, or specialize in a domain (e.g., coding, medicine).
+
+**3) Inference (when you use it)**
+- You provide a **prompt** → the model converts it to tokens → it **predicts one token at a time**, appending each new token back into the context, until a stop signal or length limit.
+- For images, you provide a text prompt and the model iteratively **guides noise into an image** that matches the prompt.
+
 
 <div style="text-align: left; margin-bottom: 10px;">
   <img src="/assets/images/genai_prompt_to_output.png" 
@@ -77,33 +85,28 @@ An astrologer synthesizes many data points and past patterns to predict an outco
 ---
 ## Popular Use Cases (and how they’re evolving)
 
-- **Writing & knowledge work**: drafting, editing, summarization, translation; now evolving into grounded answers via retrieval (RAG) and structured outputs for automation.
-
-- **Coding**: code completion, refactoring, test generation; moving toward tool-using agents that run code, read logs, and suggest fixes.
-
-- **Design & media**: image generation, layout ideation, video storyboards; trending to multi-modal pipelines (text → image → video).
-
-- **Customer experience**: chatbots, support summarization, email replies; increasingly actionable (book a meeting, create a ticket) with guardrails.
-
-- **Data & analytics**: SQL generation, charting, report drafting; heading toward conversational BI and agentic workflows over enterprise data.
-
-- **Education & training**: personalized explanations, practice problems, feedback; moving into adaptive tutoring.
+- **Writing & knowledge work:** It drafts, edits, summarizes, and translates. It’s now adding grounded answers via retrieval (RAG) and structured outputs for automation.
+- **Coding:** It completes code, refactors, and generates tests. Next up: tool-using agents that run code, read logs, and suggest fixes.
+- **Design & media:** It creates images, explores layouts, and builds video storyboards. It’s moving toward multimodal pipelines from text → image → video.
+- **Customer experience:** It powers chatbots, support summaries, and email replies. These are becoming actionable—booking meetings or creating tickets—with guardrails.
+- **Data & analytics:** It writes SQL, makes charts, and drafts reports. The trend is toward conversational BI and agentic workflows on enterprise data.
+- **Education & training:** It delivers personalized explanations, practice problems, and feedback, and is evolving into adaptive tutoring.
 
 ---
 
 ## Strengths and Limits
 
 **Strengths**
-- Fast content generation and idea exploration.
-- Lowers barriers to professional writing, design, and analysis.
-- Great for drafts, brainstorming, and automation.
+- **Speed:** Generates content fast and helps you explore ideas.
+- **Accessibility:** Lowers the barrier to quality writing, design, and analysis.
+- **Practicality:** Great for drafts, brainstorming, and automation.
 
 **Limits**
-- **Hallucinations**: Confidently wrong statements or fabricated citations.
-- **Drift**: 
-       Data/Concept drift (production): Your environment changes; outputs degrade unless you monitor and retrain/update prompts.
-       Session drift (LLMs): Style/facts can shift over long chats.
-- **Bias & fairness**: Models reflect **biases** present in data.
+- **Hallucinations:** Can produce confident but incorrect statements or citations.
+- **Drift:**  
+  - **Data/Concept drift:** As your data or environment changes, quality can drop without monitoring and updates.  
+  - **Session drift:** In long chats, tone or facts can shift.
+- **Bias & fairness:** Reflects biases present in the training data.
 
 ---
 
