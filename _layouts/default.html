@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}" />
 
   <!-- Favicon -->
   <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon" />
@@ -17,7 +17,7 @@
   {% seo %}
 
   <!-- Scripts -->
-  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -61,7 +61,6 @@
       </div>
       <div class="footer-meta">
         <span>&copy; {{ site.time | date: "%Y" }} TechUnder5</span>
-        <span>— Clear tech explainers in under 5 minutes.</span>
       </div>
       <div class="footer-links">
         <a href="https://www.youtube.com/@techunder5" target="_blank" rel="noopener" aria-label="TechUnder5 on YouTube">YouTube</a>
