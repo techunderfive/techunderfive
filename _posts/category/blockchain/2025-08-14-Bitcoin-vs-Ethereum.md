@@ -180,6 +180,5 @@ Bitcoin is money. Ethereum is the future of the internet.
 They’re built for different purposes but complement each other in the world of Web3.
 
 Which one do you believe in more — the digital gold or the decentralized world computer?  
-Share your thoughts in the comments below.
 
 ---
