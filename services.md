@@ -21,6 +21,9 @@ tags: [Services, Static Website, Small Business, Affordable Web Design, GitHub P
     <li><strong>Branding</strong> — custom colors, typography, and layout.</li>
   </ul>
 
+  <h2>Local Website Services (Near You)</h2>
+  <p class="muted">Available remotely across Canada and the USA, and for local clients{% if site.location.city %} in {{ site.location.city }}{% if site.location.region %}, {{ site.location.region }}{% endif %}{% endif %}. If you’re searching for <em>low‑cost website near me</em>, I build fast, SEO‑friendly static sites that rank and convert.</p>
+
   <h2>Portfolio Example: Bharatnatyam‑Srs Website</h2>
   <p>Here’s a recent site I built that showcases service listings, an articles section, and a responsive layout. View it here: <a href="https://techunderfive.github.io/Bharatnatyam-Srs/" target="_blank" rel="noopener">Bharatnatyam‑Srs website</a>.</p>
 
@@ -88,7 +91,11 @@ tags: [Services, Static Website, Small Business, Affordable Web Design, GitHub P
   },
   "description": "Low-cost static website design for small businesses — responsive, fast, SEO‑friendly. Starts at $500+ based on complexity. Hosted on GitHub Pages.",
   "brand": "TechUnder5",
-  "areaServed": "Remote",
+  "areaServed": [
+    {"@type": "AdministrativeArea", "name": "{% if site.location.city %}{{ site.location.city }}, {{ site.location.region }}{% else %}Remote{% endif %}"},
+    {"@type": "Country", "name": "Canada"},
+    {"@type": "Country", "name": "United States"}
+  ],
   "offers": {
     "@type": "Offer",
     "price": "500",
@@ -98,7 +105,7 @@ tags: [Services, Static Website, Small Business, Affordable Web Design, GitHub P
       "price": "500",
       "priceCurrency": "USD"
     },
-    "eligibleRegion": "Remote",
+    "eligibleRegion": "Canada, United States",
     "availability": "https://schema.org/InStock"
   },
   "url": "{{ '/services/' | relative_url }}"

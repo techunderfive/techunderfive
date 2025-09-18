@@ -40,6 +40,15 @@ plugins:
   - jekyll-seo-tag
   - jekyll-include-cache
 
+# Optional location settings for local SEO (used on Services page)
+location:
+  city: Coquitlam
+  region: British Columbia
+  country: Canada
+  latitude: 53.7267
+  longitude: -127.6476
+  service_area_km: 100
+
 # jekyll-seo-tag
 social:
   name: TechUnder5
