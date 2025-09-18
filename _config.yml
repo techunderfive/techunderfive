@@ -49,6 +49,10 @@ location:
   longitude: -127.6476
   service_area_km: 100
 
+# Optional visit reporting webhook (POST JSON)
+# Example: set to your Google Apps Script Web App URL to email visits
+visit_hook_url: 
+
 # jekyll-seo-tag
 social:
   name: TechUnder5

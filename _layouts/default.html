@@ -17,6 +17,9 @@
   {% seo %}
 
   <!-- Scripts -->
+  <script>
+    window.__TU5_VISIT_HOOK__ = "{{ site.visit_hook_url | strip | escape }}";
+  </script>
   <script src="{{ '/assets/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 </head>
 <body>
