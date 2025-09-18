@@ -1,11 +1,15 @@
 ---
 layout: default
-title: Home
+title: "TechUnder5 — Clear tech blog and low‑cost static websites"
+description: "TechUnder5: simple tech explainers and affordable low‑cost static websites for small businesses. Fast, SEO‑friendly sites built on GitHub Pages."
 ---
 
 <section aria-label="Hero" class="hero-section">
   <div style="text-align: center; margin-bottom: 30px; padding: 0 1rem;">
-    <img src="{{ '/assets/images/banner.png' | relative_url }}" alt="TechUnder5 banner" style="width: 100%; max-width: 1100px; max-height: 420px; object-fit: cover; border-radius: 12px;" loading="lazy">
+    <img id="tu5-banner-1" src="{{ '/assets/images/banner.png' | relative_url }}" alt="TechUnder5 banner" style="width: 100%; max-width: 1100px; max-height: 420px; object-fit: cover; border-radius: 12px;" loading="lazy">
+    <a id="tu5-banner-2" href="{{ '/services/' | relative_url }}" aria-label="Low-cost websites" style="display: none;">
+      <img src="{{ '/assets/images/banner2.png' | relative_url }}" alt="Low-cost websites for small businesses" style="width: 100%; max-width: 1100px; max-height: 420px; object-fit: cover; border-radius: 12px;" loading="lazy">
+    </a>
   </div>
 </section>
 
@@ -317,6 +321,20 @@ title: Home
     });
   });
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "TechUnder5",
+  "url": "https://techunderfive.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://techunderfive.com/search?q={search_term}",
+    "query-input": "required name=search_term"
+  }
+}
+</script>
+<!-- No local business schema on the homepage to avoid skewing blog discovery. Local signals are placed on Services only. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
