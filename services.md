@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Services
-description: "Affordable static websites for small businesses — responsive, fast, SEO-friendly. Starts at $500+ based on complexity. Built on GitHub Pages with zero hosting cost."
+description: "Low-cost static websites for small businesses — responsive, fast, SEO-friendly. Starts at $500+ based on complexity. Built on GitHub Pages with zero hosting cost."
 permalink: /services/
 image: /assets/images/banner.png
 tags: [Services, Static Website, Small Business, Affordable Web Design, GitHub Pages, Portfolio]
@@ -76,16 +76,17 @@ tags: [Services, Static Website, Small Business, Affordable Web Design, GitHub P
   </div>
 </section>
 
+<!-- SEO: Service schema for low-cost websites -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Static Website Design & Development",
+  "name": "Low-cost Static Website Design & Development",
   "provider": {
     "@type": "Organization",
     "name": "TechUnder5"
   },
-  "description": "Affordable static website design for small businesses — responsive, fast, SEO‑friendly. Starts at $500+ based on complexity. Hosted on GitHub Pages.",
+  "description": "Low-cost static website design for small businesses — responsive, fast, SEO‑friendly. Starts at $500+ based on complexity. Hosted on GitHub Pages.",
   "brand": "TechUnder5",
   "areaServed": "Remote",
   "offers": {

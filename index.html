@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Home
+title: "TechUnder5 — Clear tech blog and low‑cost static websites"
+description: "TechUnder5: simple tech explainers and affordable low‑cost static websites for small businesses. Fast, SEO‑friendly sites built on GitHub Pages."
 ---
 
 <section aria-label="Hero" class="hero-section">
@@ -319,6 +320,19 @@ title: Home
       card.style.display = title.includes(query) ? 'block' : 'none';
     });
   });
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "TechUnder5",
+  "url": "https://techunderfive.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://techunderfive.com/search?q={search_term}",
+    "query-input": "required name=search_term"
+  }
+}
 </script>
 <script type="application/ld+json">
 {
