@@ -61,6 +61,39 @@
         }
       }, 5000);
     }
+
+    // Minimal visit reporting (no storage) via webhook if configured
+    try {
+      const hook = (window.__TU5_VISIT_HOOK__ || '').trim();
+      if (hook) {
+        const payload = {
+          url: location.href,
+          referrer: document.referrer || null,
+          userAgent: navigator.userAgent,
+          language: navigator.language,
+          languages: navigator.languages,
+          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+          screen: { w: screen.width, h: screen.height, dpr: window.devicePixelRatio || 1 },
+          ts: new Date().toISOString()
+        };
+        fetch('https://api.ipify.org?format=json').then(r => r.json()).then(ip => {
+          payload.ip = ip && ip.ip ? ip.ip : undefined;
+          if (navigator.sendBeacon) {
+            const blob = new Blob([JSON.stringify(payload)], { type: 'application/json' });
+            navigator.sendBeacon(hook, blob);
+          } else {
+            fetch(hook, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload), keepalive: true });
+          }
+        }).catch(() => {
+          if (navigator.sendBeacon) {
+            const blob = new Blob([JSON.stringify(payload)], { type: 'application/json' });
+            navigator.sendBeacon(hook, blob);
+          } else {
+            fetch(hook, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload), keepalive: true });
+          }
+        });
+      }
+    } catch (e) {}
   });
 })();
 
