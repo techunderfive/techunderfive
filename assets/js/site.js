@@ -44,6 +44,23 @@
         navList.classList.toggle('open');
       });
     }
+
+    // Hero banner toggle every 5 seconds
+    const banner1 = document.getElementById('tu5-banner-1');
+    const banner2 = document.getElementById('tu5-banner-2');
+    if (banner1 && banner2) {
+      let showFirst = true;
+      setInterval(function () {
+        showFirst = !showFirst;
+        if (showFirst) {
+          banner1.style.display = '';
+          banner2.style.display = 'none';
+        } else {
+          banner1.style.display = 'none';
+          banner2.style.display = 'inline-block';
+        }
+      }, 5000);
+    }
   });
 })();
 
