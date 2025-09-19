@@ -51,7 +51,8 @@ location:
 
 # Optional visit reporting webhook (POST JSON)
 # Example: set to your Google Apps Script Web App URL to email visits
-visit_hook_url: 
+# Using webhook.site for testing - replace with your own webhook URL
+visit_hook_url: https://script.google.com/macros/s/AKfycbxlov0sWc3xE-h9P9wfcIZo5Z9zwSn0kI2adUxPGRHcUUOBPbWY73b4fC6_6NjrCncB/exec 
 
 # jekyll-seo-tag
 social:

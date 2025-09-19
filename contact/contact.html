@@ -25,11 +25,14 @@ permalink: /contact/contact.html
   </ul>
 
   <h3>Send a message</h3>
-  <!-- Temporary mailto form while setting up Formspree -->
-  <form class="form contact-form" action="mailto:techunder5mins@gmail.com" method="GET" enctype="text/plain">
+  <form class="form contact-form" action="https://formsubmit.co/techunder5mins@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="https://techunderfive.com/contact/thanks.html" />
+    <input type="hidden" name="_subject" value="New Contact Form Submission" />
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_template" value="table" />
     <div class="form-field">
       <label for="name">Name:</label>
-      <input class="input" type="text" id="name" name="subject" placeholder="Your name" required />
+      <input class="input" type="text" id="name" name="name" placeholder="Your name" required />
     </div>
     <div class="form-field">
       <label for="email">Email:</label>
@@ -37,7 +40,7 @@ permalink: /contact/contact.html
     </div>
     <div class="form-field">
       <label for="message">Message:</label>
-      <textarea class="textarea" id="message" name="body" rows="6" placeholder="How can I help?" required></textarea>
+      <textarea class="textarea" id="message" name="message" rows="6" placeholder="How can I help?" required></textarea>
     </div>
     <button class="btn btn--compact" type="submit" aria-label="Send message">Send</button>
   </form>
