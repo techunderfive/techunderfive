@@ -21,6 +21,11 @@
     window.__TU5_VISIT_HOOK__ = "{{ site.visit_hook_url | strip | escape }}";
   </script>
   <script src="{{ '/assets/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+
+  {% if site.adsense.enable_test1 %}
+  <!-- TEST1: AdSense manual placements - global script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense.client }}" crossorigin="anonymous"></script>
+  {% endif %}
 </head>
 <body>
   <header class="site-header">
@@ -53,6 +58,67 @@
   </header>
 
   <main class="container site-main">
+    {% if site.adsense.enable_test1 %}
+    <!-- TEST1: left/right outside container ad rails (desktop only) -->
+    <style>
+      @media (min-width: 1024px) {
+        .ad-rail { position: fixed; top: 80px; width: 160px; z-index: 5; }
+        .ad-rail.left { left: max(10px, calc((100vw - 1100px)/2 - 180px)); }
+        .ad-rail.right { right: max(10px, calc((100vw - 1100px)/2 - 180px)); }
+        .ad-rail .card { border: none; background: transparent; box-shadow: none; }
+      }
+      @media (max-width: 1023px) {
+        .ad-rail { display: none; }
+      }
+      .ad-dev-placeholder { border: 1px dashed var(--color-border); padding: 8px; margin-top: 6px; font-size: 12px; color: var(--color-text-muted); background: var(--color-surface); }
+    </style>
+    <div class="ad-rail left" aria-label="Advertisement" role="complementary">
+      <ins class="adsbygoogle"
+           style="display:block; min-height:250px"
+           data-ad-client="{{ site.adsense.client }}"
+           data-ad-slot="{{ site.adsense.slot_left }}"
+           data-adtest="{% if jekyll.environment == 'development' %}on{% endif %}"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+      {% if jekyll.environment == 'development' %}
+      <div class="ad-dev-placeholder">Test1: Left rail ad placeholder (shows if ads are blocked or still loading).</div>
+      {% endif %}
+    </div>
+    <div class="ad-rail right" aria-label="Advertisement" role="complementary">
+      <ins class="adsbygoogle"
+           style="display:block; min-height:250px"
+           data-ad-client="{{ site.adsense.client }}"
+           data-ad-slot="{{ site.adsense.slot_right }}"
+           data-adtest="{% if jekyll.environment == 'development' %}on{% endif %}"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+      {% if jekyll.environment == 'development' %}
+      <div class="ad-dev-placeholder">Test1: Right rail ad placeholder (shows if ads are blocked or still loading).</div>
+      {% endif %}
+    </div>
+    {% endif %}
+    {% if site.adsense.enable_test1 and page.layout == 'post' %}
+    <!-- TEST1: in-article ad (shown on smaller screens) -->
+    <style>
+      @media (min-width: 1024px) { .ad-in-article { display: none; } }
+      @media (max-width: 1023px) { .ad-in-article { display: block; margin: 12px 0 16px; } }
+    </style>
+    <div class="ad-in-article" aria-label="Advertisement" role="complementary">
+      <ins class="adsbygoogle"
+           style="display:block; min-height: 200px"
+           data-ad-client="{{ site.adsense.client }}"
+           data-ad-slot="{{ site.adsense.slot_article }}"
+           data-adtest="{% if jekyll.environment == 'development' %}on{% endif %}"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+      {% if jekyll.environment == 'development' %}
+      <div class="ad-dev-placeholder">Test1: In-article ad placeholder (mobile/tablet).</div>
+      {% endif %}
+    </div>
+    {% endif %}
     {{ content }}
   </main>
 

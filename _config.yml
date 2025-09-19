@@ -60,6 +60,14 @@ social:
   links:
     - https://www.youtube.com/@techunder5
 
+# AdSense configuration (Test1 manual placements)
+adsense:
+  client: "ca-pub-8372659182217383"
+  slot_left: "0000000001"   # replace with your real slot ID
+  slot_right: "0000000002"  # replace with your real slot ID
+  enable_test1: true
+  slot_article: "0000000003" # replace with your real in-article slot ID
+
 defaults:
   - scope:
       path: ""
